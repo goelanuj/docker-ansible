@@ -1,2 +1,2 @@
 #!/bin/bash
-time docker build -t todo-ansible .
+time docker build -t goelanuj/todo-ansible .

@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER Justin Menga <justin.menga@gmail.com>
+MAINTAINER Anuj Goel <goelanuj_us@yahoo.com>
 
 # Prevent dpkg errors
 ENV TERM=xterm-256color
@@ -15,7 +15,7 @@ RUN apt-get update -qy && \
     apt-get install -qy ansible
 
 # Copy baked in playbooks
-# COPY ansible /ansible
+COPY ansible /ansible
 
 # Add volume for Ansible playbooks
 VOLUME /ansible
